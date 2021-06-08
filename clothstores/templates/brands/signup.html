@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%extends 'brands/base.html'%}
+   {%block body_block%}
+       <div class="container" align="left">
+       <h2>Sign up for New User</h2>
+       <form method="POST">
+           {{form.as_p}}
+           {%csrf_token%}
+           <input type="submit" class="'btn btn-primary" value="signup">
+       </form>
+       </div>
+ {%endblock%}
